@@ -1,0 +1,89 @@
+html,*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    background: url("https://www.doptlrc.in/sites/default/files/inline-images/login-bg1_0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+p{
+    position: absolute;
+    top: 0;
+    background-color: khaki;
+    width: 100%;
+    text-align: center;
+}
+span{
+    background-color:hotpink;
+    color: white;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width:300px;
+    padding:5px;
+    margin:10px 0;
+    outline: none;
+    border:none;
+    border-radius: 5px;
+}
+button{
+    padding:5px 10px;
+}
+fieldset{
+    padding:100px;
+    background-color: rgba(0,0,0,0.4);
+    border:none;
+    border-radius: 40px;
+    position: relative;
+}
+legend{
+    position: absolute;
+    top:10%;
+    left:40%;
+    font-size: xx-large;
+    font-weight: 600;
+    color:gold;
+}
+button{
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    color:red;
+    font-weight: 600;
+    padding:10px 20px;
+    outline: 1px solid red;
+}
+button:hover{
+    color:green;
+    background-color: gainsboro;
+    outline: 1px solid green;
+}
+
+@media screen and (max-width:400px){
+    input{
+        width:150px;
+    }
+    fieldset{
+        padding:50px;
+    }
+    legend{
+        position: absolute;
+        top:10px;
+        left:50px;
+    }
+}
