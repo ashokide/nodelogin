@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, 'static')))
 app.get('/',(req,res)=>{
-    res.send("/index.html");
+    res.sendFile("/index.html");
 })
 app.get('/home',(req,res)=>{
-    res.sendFile(__dirname+"/home.html");
+    res.sendFile(__dirname+"/static/home.html");
 })
 app.post('/login', function (req, res) {
     if (req.body.username === "admin" && req.body.password === "admin") {
