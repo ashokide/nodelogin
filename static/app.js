@@ -2,7 +2,7 @@ async function login() {
     let username = document.getElementById('username').value.trim()
     let password = document.getElementById('password').value.trim()
     if (!(username == "" || password == "" || username == undefined || password == undefined)) {
-        let data = await fetch("http://localhost:3000/login", {
+        let data = await fetch("https://node-login-page.herokuapp.com/login", {
             method: 'POST',
             mode: 'cors',
             headers: {
