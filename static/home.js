@@ -1,7 +1,7 @@
 window.onload = () => {
     let user = localStorage.getItem("username")
     if(user == null){
-        location.href = '/'
+        location.href = 'https://node-login-page.herokuapp.com/'
     }
     let name = document.getElementById("name")
     name.innerText = user;
@@ -9,7 +9,7 @@ window.onload = () => {
 
 function logout() {
     localStorage.clear();
-    location.href = '/'
+    location.href = 'https://node-login-page.herokuapp.com/'
 }
 let details = document.getElementById("details");
 let getData = async()=>{

@@ -14,7 +14,7 @@ async function login() {
         if (result["code"] == 200) {
             alert("Logged In Successfully");
             localStorage.setItem("username", username);
-            location.href = "/home";
+            location.href = "https://node-login-page.herokuapp.com/home";
         }
         else {
             alert("wrong credentials");
@@ -28,7 +28,7 @@ async function login() {
 let auth = () => {
     let user = localStorage.getItem("username")
     if (user != null) {
-        location.href = '/home'
+        location.href = 'https://node-login-page.herokuapp.com/home'
     }
 }
 

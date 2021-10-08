@@ -11,7 +11,7 @@ app.get('/',(req,res)=>{
     res.send("/index.html");
 })
 app.get('/home',(req,res)=>{
-    res.sendFile(__dirname+"\\static\\home.html");
+    res.sendFile(__dirname+"/home.html");
 })
 app.post('/login', function (req, res) {
     if (req.body.username === "admin" && req.body.password === "admin") {
