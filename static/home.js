@@ -3,7 +3,7 @@ window.onload = () => {
     if (user == null) {
         location.href = 'https://node-login-page.herokuapp.com/'
     }
-    let name = document.getElementById("name")
+    let name = document.getElementById("myname")
     name.innerText = user;
 }
 
