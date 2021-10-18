@@ -52,3 +52,24 @@ img{
     border-radius: 50%;
     width: 100px;
 }
+
+
+/* NEW UPDATE */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.edit-container,.new-container{
+    display: none;
+    text-align: center;
+    font-size: large;
+    padding: 15px;
+}
+td{
+    padding: 10px;
+}
+table,th,td{
+    border-collapse: collapse;
+    border:1px solid grey !important;
+}

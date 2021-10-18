@@ -1,20 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
     <div id="header">
         <p id="title">Welcome, <span id="name"></span></p>
         <button onclick="logout()">Logout</button>
     </div>
 
-    <div id="details">
+    <!-- <div id="details">
+    </div> -->
+    <div class="container-fluid">
+        <p class="text-center h4 p-2">User Data <button class="btn btn-primary" id="new">New User</button></p>
+        <div class="col-sm-12 col-8 table-responsive w-100 ">
+            <table id="mytable" class="table">
+                <thead class="bg-secondary text-white text-center">
+                    <tr>
+                        <th>Object Id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone No.</th>
+                        <th>User Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="edit-container mx-auto col-sm-12 col-lg-8 bg-secondary py-2 text-white">
+            <p>Edit Data</p>
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name"><br><br>
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email"><br><br>
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-control" type="tel" name="phone" id="phone"><br><br>
+            <label class="form-label" for="userType">User Type</label>
+            <select class="form-select" name="userType" id="userType">
+                <option value="Free">Free</option>
+                <option value="Pro">Pro</option>
+                <option value="Premium">Premium</option>
+            </select>
+            <br><br>
+            <button class="btn btn-success" id="update">Update</button>
+            <button class="btn btn-warning" id="cancel">Cancel</button>
+        </div>
+
+        <div class="new-container mx-auto col-sm-12 col-lg-8 bg-secondary py-2 text-white">
+            <p>New User Data</p>
+            <label class="form-label" for="newname">Name</label>
+            <input class="form-control" type="text" name="newname" id="newname" required><br><br>
+            <label class="form-label" for="newemail">Email</label>
+            <input class="form-control" type="email" name="newemail" id="newemail" required><br><br>
+            <label class="form-label" for="newphone">Phone</label>
+            <input class="form-control" type="tel" name="newphone" id="newphone" required><br><br>
+            <label class="form-label" for="newuserType">User Type</label>
+            <select class="form-select" name="newuserType" id="newuserType">
+                <option value="Free" selected>Free</option>
+                <option value="Pro">Pro</option>
+                <option value="Premium">Premium</option>
+            </select>
+            <br><br>
+            <button class="btn btn-success" id="create">Create</button>
+            <button class="btn btn-warning" id="newcancel">Cancel</button>
+        </div>
     </div>
     <script src="./home.js"></script>
 </body>
+
 </html>
