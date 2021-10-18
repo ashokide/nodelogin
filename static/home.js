@@ -1,5 +1,6 @@
 window.onload = () => {
     let user = localStorage.getItem("username")
+    console.log(user)
     if (user == null) {
         location.href = 'https://node-login-page.herokuapp.com/'
     }
